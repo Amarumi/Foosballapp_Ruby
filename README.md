@@ -1,11 +1,14 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Foosball Online Tracker
+
+This is my first application for Internship Position within LunarLogic !
 
 Things you may want to cover:
 
-* Ruby version
+* Ruby version				: ruby 2.2.1p85 (2015-02-26 revision 49769) [x86_64-darwin14]
+
+* Rail version				: Rails 4.2.0
 
 * System dependencies
 
