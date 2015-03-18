@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel='icon' type='image/png' href='favico.png'>
+  	<title>Foosball - Online Tracker</title>
+  	<%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  	<%= csrf_meta_tags %>
+</head>
+<body>
+	<div class="wrapper">
+    <div class="header" role="banner">
+    </div>
+</body>
+
+<%= yield %>
+
+
+</html>
