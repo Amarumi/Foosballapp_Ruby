@@ -167,6 +167,28 @@ p {
   border-radius: 6px;
 }
 
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0px;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: 140px;
+  padding: 5px 0px;
+  margin: 2px 0px 0px;
+  list-style: outside none none;
+  font-family: 'Lobster', serif;
+  font-size: 17px;
+  color: #464646;
+  text-align: center;
+  background-color: #c1cfc8;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.176);
+  background-clip: padding-box;
+}
+
 img {
   float: center;
   position: relative;
@@ -276,14 +298,16 @@ input {
 }
 
 .alert-danger {
-  font-family: 'Lobster', serif;
-  font-size: 16px;
+  font-family: Arial, bold;
+  font-size: 17px;
+  letter-spacing: 1px;
   background-color: #d1dcdb;
-  color: #464646;
+  color: #ce486e;
 }
 
 .alert {
   padding: 15px;
+  margin-top: 30px;
   margin-bottom: 20px;
   border: 1px solid transparent;
   border-radius: 4px;
@@ -302,4 +326,18 @@ input {
   .form-control {
     color: $state-danger-text;
   }
+}
+
+.checkbox {
+  margin-top: -10px;
+  margin-bottom: 10px;
+  span {
+    margin-left: 20px;
+    font-weight: normal;
+  }
+}
+
+#session_remember_me {
+  width: auto;
+  margin-left: 0;
 }
