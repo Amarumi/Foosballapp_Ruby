@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link media="all" type="text/css" href="http://fonts.googleapis.com/css?family=Lobster" rel="stylesheet"></link>
     <title><%= full_title(yield(:title)) %></title>
     <%= stylesheet_link_tag 'application', media: 'all',
                                            'data-turbolinks-track' => true %>
@@ -10,20 +11,13 @@
   </head>
   <body>
   	<%= render 'layouts/header' %>
-      <div class="container">
-        <%= link_to "Foosball Tracker", '#', id: "logo" %>
-        <nav>
-          <ul class="nav navbar-nav navbar-right">
-            <li><%= link_to "Home",   '#' %></li>
-            <li><%= link_to "Help",   '#' %></li>
-            <li><%= link_to "Log in", '#' %></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
     <div class="container">
+      <% flash.each do |message_type, message| %>
+        <div class="alert alert-<%= message_type %>"><%= message %></div>
+      <% end %>
       <%= yield %>
       <%= render 'layouts/footer' %>
+      <%= debug(params) if Rails.env.development? %>
     </div>
   </body>
 </html>
