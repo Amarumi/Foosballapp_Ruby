@@ -2,7 +2,7 @@
 
 # Foosball Online Tracker
 
-This is my first application for Internship Position within LunarLogic !
+This is my first sample application
 
 Things you may want to cover:
 
